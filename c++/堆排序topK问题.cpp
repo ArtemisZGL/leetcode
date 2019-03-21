@@ -51,8 +51,8 @@ void initHeap(int (&a)[N])
 int main()
 {
 	int k = 3;
-	int size = 6;
-    int test[] = {16,7,3,20,17,8};
+	int size = 7;
+    int test[] = {16,7,3,20,17,8,21};
     initHeap(test);
     PrintValues(test);
     cout << endl;

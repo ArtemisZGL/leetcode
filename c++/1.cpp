@@ -46,13 +46,18 @@ int main()
                     currentCount = 0;
                 }
             }
-            else if(notChar(currentCount))
+            else if(notChar(currentChar))
             {
+            	if(currentCount == 0) 
+                {
+                	impossible = true;
+                    break;
+				}
                 currentCount += charWidth;
+                
             }
             else
             {
-            	
                 j++;
                 lineCount++;
                 currentCount = 0;

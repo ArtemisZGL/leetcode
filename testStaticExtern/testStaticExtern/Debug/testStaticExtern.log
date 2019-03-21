@@ -1,0 +1,6 @@
+﻿  test.cpp
+  test2.cpp
+  正在生成代码...
+  LINK : 没有找到 D:\learn\leetcode\testStaticExtern\Debug\testStaticExtern.exe 或上一个增量链接没有生成它；正在执行完全链接
+test2.obj : error LNK2005: "char * g_str" (?g_str@@3PADA) 已经在 test.obj 中定义
+D:\learn\leetcode\testStaticExtern\Debug\testStaticExtern.exe : fatal error LNK1169: 找到一个或多个多重定义的符号

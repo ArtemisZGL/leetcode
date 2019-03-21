@@ -1,3 +1,6 @@
+/*
+和从有序数组找和一样，双指针，一个从0开始，一个从根号开始 
+*/ 
 class Solution {
 public:
     bool judgeSquareSum(int c) {

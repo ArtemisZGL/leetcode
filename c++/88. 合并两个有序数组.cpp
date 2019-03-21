@@ -1,3 +1,7 @@
+/*
+如果从头开始双指针遍历的话，会把值给覆盖掉，所以要从尾部开始遍历 
+*/
+
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
