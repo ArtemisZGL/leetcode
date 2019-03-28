@@ -16,7 +16,7 @@
 class Solution {
 public:
     int findContentChildren(vector<int>& g, vector<int>& s) {
-        sort(g.begin(), g.end());
+        sort(g.begin(), g.end());	//g是孩子，s是饼干 
         sort(s.begin(), s.end());
         
         int gindex = 0, sindex = 0;
@@ -24,12 +24,12 @@ public:
         
         while(gindex < g.size() && sindex < s.size())
         {
-            while(sindex < s.size() && g[gindex] > s[sindex])
+            while(sindex < s.size() && g[gindex] > s[sindex])	//找到一个可以满足孩子胃口的最小饼干 
                 sindex++;
             
-            if(sindex < s.size())
+            if(sindex < s.size())	//在范围内 
                 count++;
-            gindex++;
+            gindex++;				//满足后，孩子和饼干都要后移 
             sindex++;
         }
         
