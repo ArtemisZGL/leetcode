@@ -3,12 +3,37 @@
 #include <memory>
 #include "test.h" 
 using namespace std;
-char g_str[] = "123456";
-void fun1()
+
+class Base
 {
-    cout << g_str << endl;
-}
-int main()
-{
-	fun1();
-}
+	public:
+		void f(int i)
+		{
+			cout << "int" << endl;
+		}
+		void f(char c)
+		{
+			cout << "char" << endl;
+		}
+		void f(string s)
+		{
+			cout << "string" << endl;
+		}
+	private:
+		int i;
+ };
+ 
+ class Chil:public Base
+ {
+ 	public:
+ 		void f(double d)
+ 		{
+ 			cout << "double" << endl;
+		 }
+  } ;
+  
+  int main()
+  {
+  	Chil c = Chil();
+  	c.f("aa");
+  }
